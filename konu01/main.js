@@ -15,11 +15,11 @@ A) İlkel veri türleri (Primitiye data types)
     8-Symbol Benzersiz ve değiştirlmeyen değerler oluşturmak için kullanılan veri türüdür.
         Örnek: let id = Symbol("Benzersiz")
 B) İlkel olmayan (Gelişmiş) Veri Türleri(Non-Primitive data teypes)
-1-Arrays(Diziler) : Eğer bir değişkene birden fazla değer ataması yapılacaksa kullanılır.
-    Array(parametreler) ya da [ ] tanımlanır.
-2-Object(Nesneler) : Birden fazla birbiriyle bağlantılı değer ataması yapılacaksa kullanılır. {} ile yazılır.
-3-Functions(Fonksiyonlar) : Bir işlem grubu oluşturmak için kullanılan kod blokları
-    İşlem sonucunda çıkan değer döndürür
+    1-Arrays(Diziler) : Eğer bir değişkene birden fazla değer ataması yapılacaksa kullanılır.
+        Array(parametreler) ya da [ ] tanımlanır.
+    2-Object(Nesneler) : Birden fazla birbiriyle bağlantılı değer ataması yapılacaksa kullanılır. {} ile yazılır.
+    3-Functions(Fonksiyonlar) : Bir işlem grubu oluşturmak için kullanılan kod blokları
+        İşlem sonucunda çıkan değer döndürür
 */
 
 console.log(typeof "Merhaba"); //String veri türü

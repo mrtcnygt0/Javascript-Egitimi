@@ -6,6 +6,8 @@ Değişkenler:
     3. const: const anahtar kelimesi ile tanımlanan değişkenler, sabit değerler için kullanılır ve değeri değiştirilemez. const ile tanımlanan bir değişkenin değeri yalnızca bir kez atanabilir.
 */
 
+/*
+
 var isim = "Mert";
 document.writeln(isim);
 var isim = "Selami";
@@ -86,7 +88,33 @@ console.log(sayi3);
 sayi3 = sayi3 + sayi4; // string ile int birleştirme
 console.log(sayi3);
 
-// Birleştirme Operatörü +
+// Birleştirme Operatörü
+// 1.yöntem + operatörleri
 let ogrenci = "Nazlı";
 let ogrenciYas = 25;
-console.log("Öğrenci Adı: " + ogrenci + ", Öğrenci Yaşı:" + ogrenciYas);
+console.log("Öğrenci Adı: " + ogrenci + ", Öğrenci Yaşı: " + ogrenciYas);
+
+// 2.yöntem backtik ile birleştirme (``)
+let ders = "JavaScript";
+let ders_gunu = "Çarşamba";
+
+//JavaScript eğitimi Çarşamba günü başladı.
+console.log(ders + " eğitimi " + ders_gunu + " günü başladı.");
+console.log(`${ders} eğitimi ${ders_gunu} günü başladı.`);
+
+// 30 yaşındaki Ayşe Kaya' ın mesleği öğretmendir.
+let ayas = 30;
+let ismi_ne = "Ayşe Kaya";
+let ameslek = "öğretmen";
+console.log(`${ayas} yaşındaki ${ismi_ne}' nın mesleği ${ameslek}dir.`);
+
+*/
+
+let ornek_ad = prompt("Adınızı Yazınız...");
+let ornek_soyad = prompt("Soyadınızı yazınız...");
+let ornek_yas = prompt("Yaşınızı yazınız...");
+let ornek_meslek = prompt("Mesleğinizi yazınız...");
+
+console.log(
+  `${ornek_yas} yaşındaki ${ornek_ad} ${ornek_soyad}' nın mesleği ${ornek_meslek}dir.`,
+);
