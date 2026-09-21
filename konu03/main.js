@@ -17,6 +17,8 @@ else
 
 */
 
+/*
+
 // ornek1
 let sayi = prompt("Yaşınızı giriniz...");
 console.log(typeof sayi);
@@ -115,14 +117,16 @@ if (akts >= 240) {
   );
 }
 
+*/
+
 // ornek7 VKİ HESAPLAMA = VKİ = Kilo (kg) ÷ [Boy (m)]²
 let kilo = Number(prompt("Kilonuzu giriniz (kg)..."));
 let boy = Number(prompt("Boyunuzu giriniz (cm)..."));
 
 if (boy <= 0 || kilo <= 0) {
-  console.log("Boy ve kilo değerleri 0'dan büyük olmalıdır.");
+  alert("Boy ve kilo değerleri 0'dan büyük olmalıdır.");
 } else if (isNaN(boy) || isNaN(kilo)) {
-  console.log("Geçerli sayılar giriniz.");
+  alert("Geçerli sayılar giriniz.");
 } else {
   if (boy > 3) {
     var vki = kilo / ((boy / 100) * (boy / 100));
@@ -130,13 +134,12 @@ if (boy <= 0 || kilo <= 0) {
     var vki = kilo / (boy * boy);
   }
   if (vki < 18.5) {
-    console.log("Zayıf");
+    alert("Zayıf \r\n Vücut Kitle İndeksiniz: " + vki);
   } else if (vki < 25) {
-    console.log("Normal");
+    alert("Normal \r\n Vücut Kitle İndeksiniz: " + vki);
   } else if (vki < 30) {
-    console.log("Fazla Kilolu");
+    alert("Fazla Kilolu \r\n Vücut Kitle İndeksiniz: " + vki);
   } else {
-    console.log("Obez");
+    alert("Obez \r\n Vücut Kitle İndeksiniz: " + vki);
   }
-  console.log(`Vücut Kitle İndeksiniz: ${vki}`);
 }
